@@ -1,0 +1,228 @@
+//Colors
+$primary: #707070;
+$secondary: #D5926A;
+body {
+    background-color: #EAEAEA;
+    color: $primary;
+    font-family: "Agency FB", sans-serif;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.landing-img {
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/img/landing.jpg);
+    background-size: cover;
+}
+
+.logo-img {
+    padding-top: 50px;
+    height: auto;
+    width: 15vh;
+    display: block;
+    margin-left: 25px;
+}
+
+.main-img {
+    height: auto;
+    width: 50vh;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.content-text {
+    padding: 70px 100px 0 100px;
+}
+
+.content-header {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.separator-L {
+    display: block;
+    width: 50%;
+    height: 7px;
+    background: $secondary;
+    border-radius: 3px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: $secondary;
+}
+
+h4:hover {
+    color: #707070;
+}
+
+.c-1-img {
+    background: url(../assets/img/c-1-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 81vh;
+    width: 100%;
+}
+
+.separator-R {
+    display: block;
+    width: 50%;
+    height: 7px;
+    background: $secondary;
+    border-radius: 3px;
+    float: right;
+}
+
+.c-2-img {
+    background: url(../assets/img/c-2-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 81vh;
+    width: 100%;
+}
+
+.c-3-img {
+    background: url(../assets/img/c-3-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+.contacts-img {
+    background: url(../assets/img/contact-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 82vh;
+}
+
+.contacts-header {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.orange-text {
+    color: $secondary;
+    text-align: center;
+}
+
+.normal-text {
+    color: #707070;
+}
+
+.contact-block {
+    padding-top: 15px;
+}
+
+.separator-contacts {
+    display: block;
+    width: 50%;
+    height: 7px;
+    background: $secondary;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.padding {
+    padding: 65px 0 0 0;
+}
+
+.contacts-media {
+    color: #707070 !important;
+    padding-top: 93px !important;
+}
+
+.contacts-media:hover {
+    color: $secondary !important;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    padding-top: 80px;
+}
+
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #707070;
+    background-size: 14px auto;
+    border-radius: 10px;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: rotate(-45deg);
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 6px);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid #707070;
+    border-width: 0px 0 3px 3px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0) rotate(-45deg);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px)rotate(-45deg);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px)rotate(-45deg);
+    }
+}
